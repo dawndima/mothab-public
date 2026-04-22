@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MothAB Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    h1 { font-size: 32px; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-size: 20px; margin-top: 32px; margin-bottom: 8px; }
+    .meta { color: #666; font-size: 14px; margin-bottom: 32px; }
+    p, ul { margin-bottom: 14px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 6px; }
+    code {
+      background: #eaeaea;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    a { color: #9146ff; }
+    a:hover { text-decoration: underline; }
+    .moth-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 4px;
+    }
+    .moth-logo { font-size: 32px; }
+  </style>
+</head>
+<body>
+  <div class="moth-header">
+    <span class="moth-logo">🦋</span>
+    <h1>MothAB Privacy Policy</h1>
+  </div>
+  <p class="meta">Last updated: April 22, 2026</p>
+
+  <p>MothAB ("we", "the extension") is a Chrome extension that helps Twitch streamers track their stream analytics. This policy explains what data we access, how we use it, and where it's stored. We've tried to keep it short and in plain English.</p>
+
+  <h2>TL;DR</h2>
+  <p>MothAB reads your own public Twitch stream data (title, category, viewer count) and stores it locally on your device. We don't operate a server, we don't transmit your data anywhere, and we don't share it with third parties. Your data is yours.</p>
+
+  <h2>What we access</h2>
+  <p>When you connect your Twitch account, MothAB accesses:</p>
+  <ul>
+    <li>Your Twitch username, display name, user ID, and public profile image</li>
+    <li>Your live stream status and public stream metadata (title, category, viewer count, start time)</li>
+    <li>Your channel information (current stream title and category)</li>
+  </ul>
+  <p>We request only the <code>user:read:email</code> OAuth scope. We do <strong>not</strong> access your email address, chat history, followers, subscribers, payment information, or any private data on your Twitch account.</p>
+
+  <h2>Where your data is stored</h2>
+  <p><strong>All your stream data is stored locally on your own device</strong> using Chrome's built-in <code>chrome.storage.local</code> API. We do not operate a server. We do not transmit your stream data anywhere. If you uninstall the extension or clear your browser data, your stream history is deleted.</p>
+
+  <h2>Payments</h2>
+  <p>If you upgrade to the Moth (paid) plan, payments are processed by <a href="https://extensionpay.com">ExtensionPay</a> (which uses Stripe for billing). We receive only your ExtensionPay user ID and paid status — we never see your payment card details or billing address. Refer to <a href="https://extensionpay.com/privacy">ExtensionPay's privacy policy</a> and <a href="https://stripe.com/privacy">Stripe's privacy policy</a> for how they handle payment information.</p>
+
+  <h2>Third-party services</h2>
+  <ul>
+    <li><strong>Twitch API</strong> — we query the public Twitch Helix API to fetch your own stream data. Your use of Twitch is governed by <a href="https://www.twitch.tv/p/legal/privacy-notice/">Twitch's Privacy Notice</a>.</li>
+    <li><strong>ExtensionPay / Stripe</strong> — only used if you choose to upgrade to the Moth paid plan.</li>
+  </ul>
+
+  <h2>Data deletion</h2>
+  <p>You can delete all your MothAB data at any time by:</p>
+  <ul>
+    <li>Clicking "Disconnect" in the MothAB popup to remove your Twitch connection (stream history is kept)</li>
+    <li>Uninstalling the extension from <code>chrome://extensions</code> (removes all local data)</li>
+  </ul>
+  <p>Because your data is stored locally, we cannot delete it for you — but we also never have it to begin with.</p>
+
+  <h2>Children</h2>
+  <p>MothAB is not intended for users under 13 years old. Twitch's own Terms of Service also require users to be 13 or older.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we make material changes to this policy, we'll update the "Last updated" date above and note significant changes in the extension release notes. Continued use of MothAB after changes means you accept the updated policy.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, concerns, or requests? Email us at <a href="mailto:mothab.help@gmail.com">mothab.help@gmail.com</a>.</p>
+
+  <p style="margin-top: 40px; color: #999; font-size: 13px;">MothAB is an independent project and is not affiliated with, endorsed by, or sponsored by Twitch Interactive, Inc.</p>
+</body>
+</html>
